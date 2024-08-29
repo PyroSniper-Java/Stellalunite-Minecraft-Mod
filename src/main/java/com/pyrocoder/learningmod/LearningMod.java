@@ -2,6 +2,7 @@ package com.pyrocoder.learningmod;
 //Testing to see if this updates
 
 import com.mojang.logging.LogUtils;
+import com.pyrocoder.learningmod.block.ModBlocks;
 import com.pyrocoder.learningmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,7 @@ public class LearningMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -49,6 +51,12 @@ public class LearningMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.STELLALUNITE);
             event.accept(ModItems.RAW_STELLALUNITE);
+            event.accept(ModItems.STELLALUNITE_BONE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.STELLALUNITE_BLOCK);
+            event.accept(ModBlocks.RAW_STELLALUNITE_BLOCK);
         }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
