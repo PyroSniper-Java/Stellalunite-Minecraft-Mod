@@ -7,15 +7,12 @@
     },
     "B": {
       "item": "stellalunitemod:stellalunite_bone"
-    },
-    "C": {
-      "item": "minecraft:stick"
     }
   },
   "pattern":[
-    " AA",
-    " BA",
-    "C  "
+    "AAA",
+    " B ",
+    "BBB"
   ],
   "result": {
     "count": 1,
