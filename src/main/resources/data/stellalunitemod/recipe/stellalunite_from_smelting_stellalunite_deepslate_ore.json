@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 10000,
+  "group": "stellalunite",
+  "ingredient": {
+    "item": "stellalunitemod:stellalunite_deepslate_ore"
+  },
+  "result": {
+    "id": "stellalunitemod:stellalunite"
+  }
+}

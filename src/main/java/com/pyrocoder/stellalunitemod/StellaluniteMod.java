@@ -59,6 +59,8 @@ public class StellaluniteMod {
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_BLOCKS_TAB.getKey()) {
             event.accept(ModBlocks.STELLALUNITE_BLOCK);
             event.accept(ModBlocks.RAW_STELLALUNITE_BLOCK);
+            event.accept(ModBlocks.STELLALUNITE_ORE);
+            event.accept(ModBlocks.STELLALUNITE_DEEPSLATE_ORE);
         }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
