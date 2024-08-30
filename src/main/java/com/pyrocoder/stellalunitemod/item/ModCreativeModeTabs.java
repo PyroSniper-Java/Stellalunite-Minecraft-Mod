@@ -18,9 +18,6 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STELLALUNITE_BONE.get()))
                     .title(Component.translatable("creativetab.stellalunitemod.stellalunite_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.STELLALUNITE.get());
-                        output.accept(ModItems.RAW_STELLALUNITE.get());
-                        output.accept(ModItems.STELLALUNITE_BONE.get());
 
                     }).build());
 
@@ -29,8 +26,6 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(STELLALUNITE_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.stellalunitemod.stellalunite_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.STELLALUNITE_BLOCK.get());
-                        output.accept(ModBlocks.RAW_STELLALUNITE_BLOCK.get());
 
                     }).build());
 

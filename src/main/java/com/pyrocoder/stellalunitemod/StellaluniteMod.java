@@ -49,15 +49,14 @@ public class StellaluniteMod {
 
     }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_ITEMS_TAB.getKey()) {
             event.accept(ModItems.STELLALUNITE);
             event.accept(ModItems.RAW_STELLALUNITE);
             event.accept(ModItems.STELLALUNITE_BONE);
         }
 
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_BLOCKS_TAB.getKey()) {
             event.accept(ModBlocks.STELLALUNITE_BLOCK);
             event.accept(ModBlocks.RAW_STELLALUNITE_BLOCK);
         }
