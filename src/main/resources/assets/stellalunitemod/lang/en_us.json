@@ -4,5 +4,8 @@
   "item.stellalunitemod.stellalunite_bone": "Stellalunite Bone",
 
   "block.stellalunitemod.stellalunite_block": "Block of Stellalunite",
-  "block.stellalunitemod.raw_stellalunite_block": "Stellalunite Ore"
+  "block.stellalunitemod.raw_stellalunite_block": "Stellalunite Ore",
+
+  "creativetab.stellalunitemod.stellalunite_items": "Stellalunite Items",
+  "creativetab.stellalunitemod.stellalunite_blocks": "Stellalunite Blocks"
 }

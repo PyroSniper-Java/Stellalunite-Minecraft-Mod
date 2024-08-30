@@ -3,6 +3,7 @@ package com.pyrocoder.stellalunitemod;
 
 import com.mojang.logging.LogUtils;
 import com.pyrocoder.stellalunitemod.block.ModBlocks;
+import com.pyrocoder.stellalunitemod.item.ModCreativeModeTabs;
 import com.pyrocoder.stellalunitemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,8 @@ public class StellaluniteMod {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
