@@ -54,6 +54,8 @@ public class StellaluniteMod {
             event.accept(ModItems.STELLALUNITE);
             event.accept(ModItems.RAW_STELLALUNITE);
             event.accept(ModItems.STELLALUNITE_BONE);
+
+            event.accept(ModItems.WAND);
         }
 
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_BLOCKS_TAB.getKey()) {

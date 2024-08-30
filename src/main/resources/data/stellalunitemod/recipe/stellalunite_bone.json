@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "stellalunitemod:stellalunite"
+    },
+    "C": {
+      "item": "minecraft:bone"
+    }
+  },
+  "pattern":[
+    "AAA",
+    "ACA",
+    "AAA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "stellalunitemod:stellalunite_bone"
+  }
+}
