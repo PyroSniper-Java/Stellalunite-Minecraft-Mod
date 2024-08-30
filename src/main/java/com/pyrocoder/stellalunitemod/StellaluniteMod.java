@@ -1,9 +1,9 @@
-package com.pyrocoder.learningmod;
+package com.pyrocoder.stellalunitemod;
 //Testing to see if this updates
 
 import com.mojang.logging.LogUtils;
-import com.pyrocoder.learningmod.block.ModBlocks;
-import com.pyrocoder.learningmod.item.ModItems;
+import com.pyrocoder.stellalunitemod.block.ModBlocks;
+import com.pyrocoder.stellalunitemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,14 +20,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(LearningMod.MOD_ID)
-public class LearningMod {
+@Mod(StellaluniteMod.MOD_ID)
+public class StellaluniteMod {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "learningmod";
+    public static final String MOD_ID = "stellalunitemod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public LearningMod() {
+    public StellaluniteMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in

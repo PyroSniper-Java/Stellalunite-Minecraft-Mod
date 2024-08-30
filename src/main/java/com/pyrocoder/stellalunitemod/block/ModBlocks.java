@@ -1,7 +1,7 @@
-package com.pyrocoder.learningmod.block;
+package com.pyrocoder.stellalunitemod.block;
 
-import com.pyrocoder.learningmod.LearningMod;
-import com.pyrocoder.learningmod.item.ModItems;
+import com.pyrocoder.stellalunitemod.StellaluniteMod;
+import com.pyrocoder.stellalunitemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, LearningMod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, StellaluniteMod.MOD_ID);
 
     public static final RegistryObject<Block> STELLALUNITE_BLOCK = registerBlock("stellalunite_block",
             () -> new Block(BlockBehaviour.Properties.of()

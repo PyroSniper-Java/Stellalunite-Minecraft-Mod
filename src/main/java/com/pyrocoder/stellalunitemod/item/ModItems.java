@@ -1,6 +1,6 @@
-package com.pyrocoder.learningmod.item;
+package com.pyrocoder.stellalunitemod.item;
 
-import com.pyrocoder.learningmod.LearningMod;
+import com.pyrocoder.stellalunitemod.StellaluniteMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -9,7 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-        DeferredRegister.create(ForgeRegistries.ITEMS, LearningMod.MOD_ID);
+        DeferredRegister.create(ForgeRegistries.ITEMS, StellaluniteMod.MOD_ID);
 
     public static final RegistryObject<Item> STELLALUNITE = ITEMS.register("stellalunite",
             () -> new Item(new Item.Properties()));
