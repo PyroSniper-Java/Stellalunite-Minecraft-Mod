@@ -1,10 +1,10 @@
-package com.pyrocoder.chaosmod;
-//Testing to see if this updates
+package com.pyrocoder.stellalunitemod;
 
 import com.mojang.logging.LogUtils;
-import com.pyrocoder.chaosmod.block.ModBlocks;
-import com.pyrocoder.chaosmod.item.ModCreativeModeTabs;
-import com.pyrocoder.chaosmod.item.ModItems;
+import com.pyrocoder.stellalunitemod.block.ModBlocks;
+import com.pyrocoder.stellalunitemod.item.ModCreativeModeTabs;
+import com.pyrocoder.stellalunitemod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -20,14 +20,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ChaosMod.MOD_ID)
-public class ChaosMod {
+@Mod(StellaluniteMod.MOD_ID)
+public class StellaluniteMod {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "chaosmod";
+    public static final String MOD_ID = "stellalunitemod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public ChaosMod() {
+    public StellaluniteMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
@@ -49,11 +49,21 @@ public class ChaosMod {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == ModCreativeModeTabs.CHAOTIC_ITEMS_TAB.getKey()) {
+        if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_ITEMS_TAB.getKey()) {
+            event.accept(ModItems.STELLALUNITE);
+            event.accept(ModItems.RAW_STELLALUNITE);
+            event.accept(ModItems.STELLALUNITE_BONE);
+
             event.accept(ModItems.WAND);
         }
-    }
 
+        if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_BLOCKS_TAB.getKey()) {
+            event.accept(ModBlocks.STELLALUNITE_BLOCK);
+            event.accept(ModBlocks.RAW_STELLALUNITE_BLOCK);
+            event.accept(ModBlocks.STELLALUNITE_ORE);
+            event.accept(ModBlocks.STELLALUNITE_DEEPSLATE_ORE);
+        }
+    }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
