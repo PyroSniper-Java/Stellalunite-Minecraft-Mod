@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "stellalunitemod:block/raw_stellalunite_block"
-  }
-}
