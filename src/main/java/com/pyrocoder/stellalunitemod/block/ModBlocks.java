@@ -1,6 +1,7 @@
 package com.pyrocoder.stellalunitemod.block;
 
 import com.pyrocoder.stellalunitemod.StellaluniteMod;
+import com.pyrocoder.stellalunitemod.block.custom.MagicBlock;
 import com.pyrocoder.stellalunitemod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -36,6 +37,9 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 8), BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

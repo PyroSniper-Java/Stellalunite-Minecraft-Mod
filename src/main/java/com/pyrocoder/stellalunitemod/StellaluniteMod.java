@@ -63,6 +63,7 @@ public class StellaluniteMod {
             event.accept(ModBlocks.RAW_STELLALUNITE_BLOCK);
             event.accept(ModBlocks.STELLALUNITE_ORE);
             event.accept(ModBlocks.STELLALUNITE_DEEPSLATE_ORE);
+            event.accept(ModBlocks.MAGIC_BLOCK);
         }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
