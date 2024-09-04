@@ -1,7 +1,7 @@
 package com.pyrocoder.stellalunitemod.item;
 
 import com.pyrocoder.stellalunitemod.StellaluniteMod;
-import com.pyrocoder.stellalunitemod.item.custom.StellaluniteWandItem;
+import com.pyrocoder.stellalunitemod.item.custom.WandItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,7 +20,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> WAND = ITEMS.register("wand",
-            () -> new StellaluniteWandItem(new Item.Properties().durability(32)));
+            () -> new WandItem(new Item.Properties().durability(32)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

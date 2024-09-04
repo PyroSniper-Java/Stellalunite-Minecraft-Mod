@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "stellalunitemod:wand"
+    },
+    "B": {
+      "item": "minecraft:brewing_stand"
+    }
+  },
+  "pattern":[
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "stellalunitemod:magic_block"
+  }
+}

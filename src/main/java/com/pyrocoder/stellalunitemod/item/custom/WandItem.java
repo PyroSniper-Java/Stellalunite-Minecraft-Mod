@@ -1,9 +1,7 @@
 package com.pyrocoder.stellalunitemod.item.custom;
 
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -16,7 +14,7 @@ import net.minecraft.world.level.block.Blocks;
 
 import java.util.Map;
 
-public class StellaluniteWandItem extends Item {
+public class WandItem extends Item {
     private static final Map<Block, Block> WAND_MAP =
             Map.of(
                     Blocks.STONE, Blocks.STONE_BRICKS,
@@ -24,7 +22,7 @@ public class StellaluniteWandItem extends Item {
                     Blocks.BEDROCK, Blocks.DIRT
             );
 
-    public StellaluniteWandItem(Properties pProperties) {
+    public WandItem(Properties pProperties) {
         super(pProperties);
     }
 
