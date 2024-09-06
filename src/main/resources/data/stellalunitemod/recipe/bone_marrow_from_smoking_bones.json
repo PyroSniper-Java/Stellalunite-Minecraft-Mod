@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1000,
+  "group": "bone_marrow",
+  "ingredient": {
+    "item": "stellalunitemod:stellalunite_bone"
+  },
+  "result": {
+    "id": "stellalunitemod:bone_marrow"
+  }
+}

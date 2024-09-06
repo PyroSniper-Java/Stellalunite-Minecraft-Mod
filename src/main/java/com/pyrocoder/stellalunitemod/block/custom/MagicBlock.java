@@ -33,10 +33,11 @@ public class MagicBlock extends Block {
     @Override
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
         if(pEntity instanceof ItemEntity itemEntity){
-            if(itemEntity.getItem().getItem() == ModItems.WAND.get()){
-                itemEntity.setItem(new ItemStack(Items.BEDROCK, itemEntity.getItem().getCount()));
-            } if(itemEntity.getItem().getItem() == Items.DIRT){
-                itemEntity.setItem(new ItemStack(ModItems.WAND.get(), itemEntity.getItem().getCount()));
+            if(itemEntity.getItem().getItem() == Items.COOKED_BEEF){
+                itemEntity.setItem(new ItemStack(ModItems.INBONE_STEAK.get(), itemEntity.getItem().getCount()));
+            }
+            if(itemEntity.getItem().getItem() == Items.BONE){
+                itemEntity.setItem(new ItemStack(ModItems.STELLALUNITE_BONE.get(), itemEntity.getItem().getCount()));
             }
         }
 

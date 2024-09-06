@@ -55,6 +55,8 @@ public class StellaluniteMod {
             event.accept(ModItems.RAW_STELLALUNITE);
             event.accept(ModItems.STELLALUNITE_BONE);
 
+            event.accept(ModItems.BONE_MARROW);
+
             event.accept(ModItems.WAND);
         }
 
@@ -65,7 +67,13 @@ public class StellaluniteMod {
             event.accept(ModBlocks.STELLALUNITE_DEEPSLATE_ORE);
             event.accept(ModBlocks.MAGIC_BLOCK);
         }
+
+        if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_FOODS_TAB.getKey()) {
+            event.accept(ModItems.INBONE_STEAK);
+        }
+
     }
+
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {

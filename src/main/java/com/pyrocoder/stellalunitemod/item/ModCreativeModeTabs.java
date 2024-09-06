@@ -29,6 +29,14 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> STELLALUNITE_FOODS_TAB = CREATIVE_MODE_TABS.register("stellalunite_foods_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.INBONE_STEAK.get()))
+                    .withTabsBefore(STELLALUNITE_BLOCKS_TAB.getId())
+                    .title(Component.translatable("creativetab.stellalunitemod.stellalunite_foods"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

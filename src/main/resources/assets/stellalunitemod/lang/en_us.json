@@ -3,6 +3,8 @@
   "item.stellalunitemod.raw_stellalunite": "Raw Stellalunite",
   "item.stellalunitemod.stellalunite_bone": "Stellalunite Bone",
   "item.stellalunitemod.wand": "Stellalunite Wand",
+  "item.stellalunitemod.inbone_steak": "Inbone Steak",
+  "item.stellalunitemod.bone_marrow": "Bone Marrow",
 
   "block.stellalunitemod.stellalunite_block": "Block of Stellalunite",
   "block.stellalunitemod.raw_stellalunite_block": "Raw Stellalunite",
@@ -11,5 +13,6 @@
   "block.stellalunitemod.magic_block": "Magic Block",
 
   "creativetab.stellalunitemod.stellalunite_items": "Stellalunite Items",
-  "creativetab.stellalunitemod.stellalunite_blocks": "Stellalunite Blocks"
+  "creativetab.stellalunitemod.stellalunite_blocks": "Stellalunite Blocks",
+  "creativetab.stellalunitemod.stellalunite_foods": "Stellalunite Foods"
 }
