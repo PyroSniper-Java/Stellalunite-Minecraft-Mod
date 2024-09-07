@@ -2,6 +2,7 @@ package com.pyrocoder.stellalunitemod.item;
 
 import com.pyrocoder.stellalunitemod.StellaluniteMod;
 import com.pyrocoder.stellalunitemod.item.custom.FuelItem;
+import com.pyrocoder.stellalunitemod.item.custom.StellaluniteBone;
 import com.pyrocoder.stellalunitemod.item.custom.WandItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,8 +19,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_STELLALUNITE = ITEMS.register("raw_stellalunite",
             () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> STELLALUNITE_BONE = ITEMS.register("stellalunite_bone",
-            () -> new Item(new Item.Properties()));
+            () -> new StellaluniteBone(new Item.Properties()));
 
     //Custom Items With Functions
     public static final RegistryObject<Item> WAND = ITEMS.register("wand",

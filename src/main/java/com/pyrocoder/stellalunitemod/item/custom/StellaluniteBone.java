@@ -21,10 +21,9 @@ public class StellaluniteBone extends Item {
                 wolf.tame(pPlayer);
                 wolf.setTarget(null);
                 wolf.setOrderedToSit(true);
-                wolf.getNavigation().stop();
                 wolf.level().broadcastEntityEvent(wolf, (byte)7);
             }
         }
-        return null;
+        return InteractionResult.SUCCESS;
     }
 }
