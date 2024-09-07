@@ -12,6 +12,7 @@ import net.minecraft.world.entity.animal.Wolf;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
@@ -37,21 +38,5 @@ public class StellaluniteBone extends Item {
             }
         }
         return InteractionResult.SUCCESS;
-    }
-
-    @Mixin(Wolf.class)
-    public abstract class WolfMixin extends Animal{
-        protected WolfMixin(EntityType<? extends Animal> pEntityType, Level pLevel) {
-            super(pEntityType, pLevel);
-        }
-
-        @Inject(at = @At(value = "head"), method = "registerGoals", cancellable = false)
-        protected void isValidFoodItem(CallbackInfo ci){
-            this.goalSelector.addGoal(1, new TemptGoal(this, 2, Ingredient.of(new ItemLike[]{ModItems.STELLALUNITE_BONE.get()}), false));
-        }
-
-        public boolean isFood(ItemStack pStack){
-            return pStack.is(ModItems.STELLALUNITE_BONE.get());
-        }
     }
 }

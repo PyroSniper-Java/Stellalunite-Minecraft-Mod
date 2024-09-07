@@ -1,6 +1,7 @@
 package com.pyrocoder.stellalunitemod.block.custom;
 
 import com.pyrocoder.stellalunitemod.item.ModItems;
+import com.pyrocoder.stellalunitemod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -33,14 +34,19 @@ public class MagicBlock extends Block {
     @Override
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
         if(pEntity instanceof ItemEntity itemEntity){
-            if(itemEntity.getItem().getItem() == Items.COOKED_BEEF){
-                itemEntity.setItem(new ItemStack(ModItems.INBONE_STEAK.get(), itemEntity.getItem().getCount()));
+            if(isValidItem(itemEntity.getItem())){
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
-            if(itemEntity.getItem().getItem() == Items.BONE){
-                itemEntity.setItem(new ItemStack(ModItems.STELLALUNITE_BONE.get(), itemEntity.getItem().getCount()));
+
+            if(itemEntity.getItem().getItem() == ModItems.STELLALUNITE.get()){
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
         }
 
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 }
