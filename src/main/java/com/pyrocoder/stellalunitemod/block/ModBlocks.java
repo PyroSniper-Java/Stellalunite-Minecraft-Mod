@@ -32,7 +32,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STELLALUNITE_ORE = registerBlock("stellalunite_ore",
             () -> new DropExperienceBlock(UniformInt.of(1, 4), BlockBehaviour.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(2f)
+
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> STELLALUNITE_DEEPSLATE_ORE = registerBlock("stellalunite_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 8), BlockBehaviour.Properties.of()
@@ -43,9 +45,9 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops()));
 
     //Button
-    public static final RegistryObject<ButtonBlock> CRASH_BUTTON = registerBlock("crash_button",
-            () -> new ButtonBlock(ButtonBlock.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops()));
+    //public static final RegistryObject<ButtonBlock> CRASH_BUTTON = registerBlock("crash_button",
+           // () -> new ButtonBlock(ButtonBlock.Properties.of()
+                    //.strength(2f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
