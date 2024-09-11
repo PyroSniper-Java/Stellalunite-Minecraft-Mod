@@ -1,5 +1,5 @@
 {
-  "feature": "stellalunitemod:stellalunite_ore",
+  "feature": "stellalunitemod:overworld_stellalunite_ore",
   "placement": [
     {
       "type": "minecraft:count",
