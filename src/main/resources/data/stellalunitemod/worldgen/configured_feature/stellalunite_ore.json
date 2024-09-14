@@ -1,12 +1,12 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "discard_chance_on_air_exposure": 0.7,
-    "size": 9,
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 17,
     "targets": [
       {
         "state": {
-          "Name": "stellalunitemod:overworld_stellalunite_ore"
+          "Name": "stellalunitemod:stellalunite_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

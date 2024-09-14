@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "features": "stellalunitemod:stellalunite_ore",
-  "biome": "#minecraft:is_overworld",
-  "step": "underground_ores"
-}
