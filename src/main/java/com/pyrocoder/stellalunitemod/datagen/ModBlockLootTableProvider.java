@@ -32,8 +32,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_STELLALUNITE_BLOCK.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
 
+        this.add(ModBlocks.DUPLICATE_BLOCK.get(),
+                block -> createMultipleDrops(ModBlocks.DUPLICATE_BLOCK.get(), ModBlocks.DUPLICATE_BLOCK.get(), 2, 4));
+
         this.add(ModBlocks.STELLALUNITE_ORE.get(),
-                block -> createOreDrop(ModBlocks.STELLALUNITE_ORE.get(), ModItems.RAW_STELLALUNITE.get()));
+                block -> createMultipleOreDrops(ModBlocks.STELLALUNITE_ORE.get(), ModItems.RAW_STELLALUNITE.get(), 64, 128));
         this.add(ModBlocks.STELLALUNITE_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.STELLALUNITE_DEEPSLATE_ORE.get(), ModItems.RAW_STELLALUNITE.get(), 32, 64));
     }
@@ -43,6 +46,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         return this.createSilkTouchDispatchTable(
                 pBlock, this.applyExplosionDecay(
                         pBlock, LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
+                                .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
+                )
+        );
+    }
+
+    protected LootTable.Builder createMultipleDrops(Block pBlock, Block block, float minDrops, float maxDrops) {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        return this.createSilkTouchDispatchTable(
+                pBlock, this.applyExplosionDecay(
+                        pBlock, LootItem.lootTableItem(block)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
                                 .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
                 )

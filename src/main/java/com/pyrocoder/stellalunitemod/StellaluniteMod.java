@@ -67,6 +67,7 @@ public class StellaluniteMod {
             event.accept(ModBlocks.STELLALUNITE_ORE);
             event.accept(ModBlocks.STELLALUNITE_DEEPSLATE_ORE);
             event.accept(ModBlocks.MAGIC_BLOCK);
+            event.accept(ModBlocks.DUPLICATE_BLOCK);
         }
 
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_FOODS_TAB.getKey()) {

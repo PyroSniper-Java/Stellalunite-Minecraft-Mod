@@ -23,6 +23,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> DUPLICATE_BLOCK = registerBlock("duplicate_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.SUSPICIOUS_GRAVEL)));
+
     public static final RegistryObject<Block> RAW_STELLALUNITE_BLOCK = registerBlock("raw_stellalunite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));

@@ -20,6 +20,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.MAGIC_BLOCK);
 
+        blockWithItem(ModBlocks.DUPLICATE_BLOCK);
+
         blockWithItem(ModBlocks.STELLALUNITE_ORE);
         blockWithItem(ModBlocks.STELLALUNITE_DEEPSLATE_ORE);
     }
