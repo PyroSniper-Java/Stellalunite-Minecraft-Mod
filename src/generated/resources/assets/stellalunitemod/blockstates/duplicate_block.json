@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "stellalunitemod:block/duplicate_block"
+    }
+  }
+}
