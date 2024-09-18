@@ -1,0 +1,6 @@
+// 1.21	2024-09-17T20:38:33.6842007	Loot Tables
+ef1659ff0bae03357f406dbf7936f6c72f76a83d data/stellalunitemod/loot_table/blocks/magic_block.json
+ae419738e34e915667f0225a23956d901aa8177e data/stellalunitemod/loot_table/blocks/raw_stellalunite_block.json
+ddd06d916c97d963e99d1d3319668a7182569c4a data/stellalunitemod/loot_table/blocks/stellalunite_block.json
+52689261828c9fcbdb40bd6f11c4703a03689fa9 data/stellalunitemod/loot_table/blocks/stellalunite_deepslate_ore.json
+a8cc48e151b18393e757085a1980ad72f175e5e1 data/stellalunitemod/loot_table/blocks/stellalunite_ore.json
