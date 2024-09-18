@@ -1,10 +1,21 @@
-[27Aug2024 21:50:51.428] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\Kaeden\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, learningmod, --all, --output, C:\Users\Kaeden\Downloads\forge-1.21-51.0.32-mdk\src\generated\resources, --existing, C:\Users\Kaeden\Downloads\forge-1.21-51.0.32-mdk\src\main\resources]
-[27Aug2024 21:50:51.430] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Amazon.com Inc. OpenJDK 64-Bit Server VM 21.0.4+7-LTS
-[27Aug2024 21:50:51.432] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.4 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
-[27Aug2024 21:50:51.501] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file C:\Users\Kaeden\Downloads\forge-1.21-51.0.32-mdk\run-data\config\fml.toml is not correct. Correcting
-[27Aug2024 21:50:51.502] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
-[27Aug2024 21:50:51.502] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
-[27Aug2024 21:50:51.502] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
-[27Aug2024 21:50:51.503] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
-[27Aug2024 21:50:51.513] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[27Aug2024 21:50:51.605] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/Kaeden/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[17Sep2024 21:08:08.471] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\Kaeden\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, stellalunitemod, --all, --output, C:\Users\Kaeden\Downloads\forge-1.21-51.0.32-mdk\src\generated\resources, --existing, C:\Users\Kaeden\Downloads\forge-1.21-51.0.32-mdk\src\main\resources]
+[17Sep2024 21:08:08.473] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[17Sep2024 21:08:08.474] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[17Sep2024 21:08:08.550] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[17Sep2024 21:08:08.636] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/Kaeden/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[17Sep2024 21:08:09.301] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[17Sep2024 21:08:09.828] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\Kaeden\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, stellalunitemod, --all, --output, C:\Users\Kaeden\Downloads\forge-1.21-51.0.32-mdk\src\generated\resources, --existing, C:\Users\Kaeden\Downloads\forge-1.21-51.0.32-mdk\src\main\resources]
+[17Sep2024 21:08:13.776] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.32, for MC 1.21 with MCP 20240613.102039
+[17Sep2024 21:08:13.776] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.32 Initialized
+[17Sep2024 21:08:13.789] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[17Sep2024 21:08:14.221] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [stellalunitemod]
+[17Sep2024 21:08:14.264] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Kaeden/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.32_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.32_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[17Sep2024 21:08:14.264] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Kaeden/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.32_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.32_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[17Sep2024 21:08:14.359] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[17Sep2024 21:08:14.524] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 164 ms
+[17Sep2024 21:08:14.524] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: stellalunitemod
+[17Sep2024 21:08:14.532] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: stellalunitemod finished after 7 ms
+[17Sep2024 21:08:14.532] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: stellalunitemod
+[17Sep2024 21:08:14.609] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: stellalunitemod finished after 77 ms
+[17Sep2024 21:08:14.609] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 250 ms
+[17Sep2024 21:08:14.613] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 26, old count: 5, new count: 27, removed stale: 0, written: 26
