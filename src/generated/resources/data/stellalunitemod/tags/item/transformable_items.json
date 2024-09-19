@@ -2,8 +2,7 @@
   "values": [
     "stellalunitemod:stellalunite",
     "stellalunitemod:raw_stellalunite",
-    "minecraft:coal",
-    "minecraft:stick",
-    "minecraft:compass"
+    "stellalunitemod:bone_marrow",
+    "minecraft:redstone"
   ]
 }

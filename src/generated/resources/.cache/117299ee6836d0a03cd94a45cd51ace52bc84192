@@ -1,0 +1,5 @@
+// 1.21	2024-09-19T17:34:50.3209422	Tags for minecraft:block mod id stellalunitemod
+ec2799242783d561e624f2632d411fadfb6a7ece data/minecraft/tags/block/mineable/pickaxe.json
+2240099ca3ad3d2a79cf9b0572ad23f4c9395448 data/minecraft/tags/block/needs_diamond_tool.json
+fc1a4314af90f7c215034c111fa99bf43eef5b62 data/minecraft/tags/block/needs_iron_tool.json
+2d0154c620aae3b0bd5efc14823fc7e9cc934887 data/minecraft/tags/block/needs_stone_tool.json
