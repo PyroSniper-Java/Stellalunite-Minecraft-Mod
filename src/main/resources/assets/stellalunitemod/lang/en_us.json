@@ -10,10 +10,22 @@
   "block.stellalunitemod.raw_stellalunite_block": "Raw Stellalunite",
   "block.stellalunitemod.stellalunite_ore": "Stellalunite Ore",
   "block.stellalunitemod.stellalunite_deepslate_ore": "Deepslate Stellalunite Ore",
-  "block.stellalunitemod.magic_block": "Magic Block",
+  "block.stellalunitemod.magic_block": "§kMagic §kBlock",
   "block.stellalunitemod.duplicate_block": "Duplicating Block",
 
   "creativetab.stellalunitemod.stellalunite_items": "Stellalunite Items",
   "creativetab.stellalunitemod.stellalunite_blocks": "Stellalunite Blocks",
-  "creativetab.stellalunitemod.stellalunite_foods": "Stellalunite Foods"
+  "creativetab.stellalunitemod.stellalunite_foods": "Stellalunite Foods",
+
+  "tooltip.stellalunitemod.magic_block_tip": "This is a §kMagic §kBlock",
+
+  "tooltip.stellalunitemod.wand_null": "Press either Shift or Alt for more details",
+  "tooltip.stellalunitemod.wand_shift": "This is a wand that can transform certain blocks... press Alt for the list of transformations",
+  "tooltip.stellalunitemod.wand_alt1": "This turns:",
+  "tooltip.stellalunitemod.wand_alt2": "Stone -> Stone Bricks",
+  "tooltip.stellalunitemod.wand_alt3": "Dirt -> Bedrock",
+  "tooltip.stellalunitemod.wand_alt4": "Bedrock -> Dirt",
+  "tooltip.stellalunitemod.wand_alt5": "§7§kMagic Blocks§r -> §4§kNetherite Blocks§r",
+
+  "tooltip.stellalunitemod.stellalunite_bone": "§dThis Item Tames §7§kWolves§r §dIn One Go"
 }

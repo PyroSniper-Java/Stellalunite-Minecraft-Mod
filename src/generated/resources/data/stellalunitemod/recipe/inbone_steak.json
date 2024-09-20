@@ -9,10 +9,10 @@
       "item": "stellalunitemod:bone_marrow"
     },
     "C": {
-      "item": "minecraft:wheat"
+      "item": "minecraft:bread"
     }
   },
-  "pattern":[
+  "pattern": [
     "CBC",
     "BAB",
     "CBC"

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 1.0E9,
+  "group": "stellalunite",
+  "ingredient": {
+    "item": "stellalunitemod:stellalunite_deepslate_ore"
+  },
+  "result": {
+    "id": "stellalunitemod:stellalunite"
+  }
+}

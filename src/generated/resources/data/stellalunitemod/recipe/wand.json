@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "key": {
     "A": {
-      "item": "stellalunitemod:stellalunite"
+      "item": "stellalunitemod:inbone_steak"
     },
     "B": {
-      "item": "stellalunitemod:stellalunite_bone"
+      "item": "minecraft:brewing_stand"
     }
   },
-  "pattern":[
+  "pattern": [
     "AAA",
     " B ",
-    "BBB"
+    " B "
   ],
   "result": {
     "count": 1,

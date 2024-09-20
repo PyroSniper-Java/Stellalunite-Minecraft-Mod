@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stellalunite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stellalunitemod:stellalunite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stellalunitemod:stellalunite_from_smelting_stellalunite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stellalunite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stellalunitemod:stellalunite_from_smelting_stellalunite_ore"
+    ]
+  }
+}

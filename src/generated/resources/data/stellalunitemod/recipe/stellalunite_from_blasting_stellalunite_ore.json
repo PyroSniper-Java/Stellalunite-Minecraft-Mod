@@ -1,11 +1,11 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 20,
-  "experience": 1000,
+  "cookingtime": 50,
+  "experience": 1.0E9,
   "group": "stellalunite",
   "ingredient": {
-    "item": "stellalunitemod:raw_stellalunite"
+    "item": "stellalunitemod:stellalunite_ore"
   },
   "result": {
     "id": "stellalunitemod:stellalunite"

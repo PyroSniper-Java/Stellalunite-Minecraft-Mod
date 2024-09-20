@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
+    "a": {
       "item": "stellalunitemod:wand"
     },
-    "B": {
+    "b": {
       "item": "minecraft:brewing_stand"
     }
   },
-  "pattern":[
-    "ABA",
-    "BAB",
-    "ABA"
+  "pattern": [
+    "aba",
+    "bab",
+    "aba"
   ],
   "result": {
     "count": 1,

@@ -1,8 +1,8 @@
 {
   "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 10,
-  "experience": 2000,
+  "cookingtime": 50,
+  "experience": 1.0E9,
   "group": "stellalunite",
   "ingredient": {
     "item": "stellalunitemod:raw_stellalunite"

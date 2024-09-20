@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    },
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    },
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    },
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    },
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    },
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    },
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    },
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    },
+    {
+      "item": "stellalunitemod:raw_stellalunite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stellalunitemod:raw_stellalunite_block"
+  }
+}

@@ -4,11 +4,16 @@ import com.pyrocoder.stellalunitemod.StellaluniteMod;
 import com.pyrocoder.stellalunitemod.item.custom.FuelItem;
 import com.pyrocoder.stellalunitemod.item.custom.StellaluniteBone;
 import com.pyrocoder.stellalunitemod.item.custom.WandItem;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -21,7 +26,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> STELLALUNITE_BONE = ITEMS.register("stellalunite_bone",
-            () -> new StellaluniteBone(new Item.Properties()));
+            () -> new StellaluniteBone(new Item.Properties()) {
+                @Override
+                public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+                    pTooltipComponents.add(Component.translatable("tooltip.stellalunitemod.stellalunite_bone"));
+                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+                }
+            });
 
     //Custom Items With Functions
     public static final RegistryObject<Item> WAND = ITEMS.register("wand",
