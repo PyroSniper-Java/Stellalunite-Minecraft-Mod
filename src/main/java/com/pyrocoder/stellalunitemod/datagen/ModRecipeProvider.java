@@ -94,9 +94,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.BREWING_STAND), has(Items.BREWING_STAND))
                 .save(pRecipeOutput);
 
-        SimpleCookingRecipeBuilder.smoking(Ingredient.EMPTY, RecipeCategory.BREWING, ModItems.BONE_MARROW.get(), 999, 100)
-
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.EMPTY, RecipeCategory.MISC, ModItems.BONE_MARROW.get(), 900, 100);
     }
+
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult,
