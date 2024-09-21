@@ -1,13 +1,18 @@
 package com.pyrocoder.stellalunitemod.item.custom;
 
+import com.pyrocoder.stellalunitemod.block.ModBlocks;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.animal.Wolf;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -25,6 +30,11 @@ public class WandItem extends Item {
                     Blocks.STONE, Blocks.STONE_BRICKS,
                     Blocks.DIRT, Blocks.BEDROCK,
                     Blocks.BEDROCK, Blocks.DIRT
+            );
+
+    private static final Map<Block, Block> CRASH_MAP =
+            Map.of(
+                    ModBlocks.CRASH_BUTTON.get(), Blocks.BARRIER
             );
 
     public WandItem(Properties pProperties) {
@@ -45,7 +55,6 @@ public class WandItem extends Item {
 
                 level.playSound(null, pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
             }
-
         }
         return InteractionResult.SUCCESS;
     }

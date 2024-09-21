@@ -38,5 +38,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.STELLALUNITE_DEEPSLATE_ORE.get());
+
+        tag(BlockTags.FENCES)
+                .add(ModBlocks.STELLALUNITE_FENCE.get());
+
+        tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.STELLALUNITE_FENCE_GATE.get());
+
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.STELLALUNITE_WALL.get());
     }
 }

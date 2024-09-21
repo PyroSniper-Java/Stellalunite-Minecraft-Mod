@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "stellalunite",
+  "ingredients": [
+    {
+      "item": "stellalunitemod:stellalunite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stellalunitemod:stellalunite_button"
+  }
+}

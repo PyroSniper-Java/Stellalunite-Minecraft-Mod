@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "stellalunite",
+  "key": {
+    "#": {
+      "item": "stellalunitemod:stellalunite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "stellalunitemod:stellalunite_tarp_door"
+  }
+}

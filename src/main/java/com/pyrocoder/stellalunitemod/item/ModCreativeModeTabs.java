@@ -37,6 +37,14 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> STELLALUNITE_NONBLOCK_BLOCKS = CREATIVE_MODE_TABS.register("stellalunite_nonblocks_blocks",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.INBONE_STEAK.get()))
+                    .withTabsBefore(STELLALUNITE_BLOCKS_TAB.getId())
+                    .title(Component.translatable("creativetab.stellalunitemod.stellalunite_nonblock_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

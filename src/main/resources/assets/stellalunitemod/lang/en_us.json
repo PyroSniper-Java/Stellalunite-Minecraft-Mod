@@ -13,9 +13,25 @@
   "block.stellalunitemod.magic_block": "§kMagic §kBlock",
   "block.stellalunitemod.duplicate_block": "Duplicating Block",
 
+  "block.stellalunitemod.stellalunite_stair": "Stellalunite Stair",
+  "block.stellalunitemod.stellalunite_slab": "Stellalunite Slab",
+
+  "block.stellalunitemod.stellalunite_button": "Stellalunite Button",
+  "block.stellalunitemod.stellalunite_pressure_plate": "Stellalunite Pressure Plate",
+
+  "block.stellalunitemod.stellalunite_fence": "Stellalunite Fence",
+  "block.stellalunitemod.stellalunite_fence_gate": "Stellalunite Fence Gate",
+  "block.stellalunitemod.stellalunite_wall": "Stellalunite Wall",
+
+  "block.stellalunitemod.stellalunite_door": "Stellalunite Door",
+  "block.stellalunitemod.stellalunite_trap_door": "Stellalunite Trap Door",
+
+  "block.stellalunitemod.crash_button": "§kCrash Button§r",
+
   "creativetab.stellalunitemod.stellalunite_items": "Stellalunite Items",
   "creativetab.stellalunitemod.stellalunite_blocks": "Stellalunite Blocks",
   "creativetab.stellalunitemod.stellalunite_foods": "Stellalunite Foods",
+  "creativetab.stellalunitemod.stellalunite_nonblock_blocks": "Stellalunite Nonblock Blocks",
 
   "tooltip.stellalunitemod.magic_block_tip": "This is a §kMagic §kBlock",
 

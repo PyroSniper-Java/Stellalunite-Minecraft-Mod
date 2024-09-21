@@ -13,7 +13,6 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
@@ -39,6 +38,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.STELLALUNITE_ORE.get(), ModItems.RAW_STELLALUNITE.get(), 64, 128));
         this.add(ModBlocks.STELLALUNITE_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.STELLALUNITE_DEEPSLATE_ORE.get(), ModItems.RAW_STELLALUNITE.get(), 32, 64));
+
+        dropSelf(ModBlocks.CRASH_BUTTON.get());
+
+        dropSelf(ModBlocks.STELLALUNITE_STAIR.get());
+        this.add(ModBlocks.STELLALUNITE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.STELLALUNITE_SLAB.get()));
+
+        dropSelf(ModBlocks.STELLALUNITE_BUTTON.get());
+        dropSelf(ModBlocks.STELLALUNITE_PRESSURE_PLATE.get());
+
+        dropSelf(ModBlocks.STELLALUNITE_FENCE.get());
+        dropSelf(ModBlocks.STELLALUNITE_FENCE_GATE.get());
+        dropSelf(ModBlocks.STELLALUNITE_WALL.get());
+
+        this.add(ModBlocks.STELLALUNITE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.STELLALUNITE_DOOR.get()));
+        dropSelf(ModBlocks.STELLALUNITE_TRAP_DOOR.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

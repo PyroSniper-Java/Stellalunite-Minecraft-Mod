@@ -95,6 +95,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pRecipeOutput);
 
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.EMPTY, RecipeCategory.MISC, ModItems.BONE_MARROW.get(), 900, 100);
+
+        stairBuilder(ModBlocks.STELLALUNITE_STAIR.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLALUNITE_SLAB.get(), ModItems.STELLALUNITE.get());
+
+        buttonBuilder(ModBlocks.CRASH_BUTTON.get(), Ingredient.of(ModItems.BONE_MARROW.get())).group("stellalunite").unlockedBy(getHasName(ModItems.BONE_MARROW.get()), has(ModItems.BONE_MARROW.get())).save(pRecipeOutput);
+        buttonBuilder(ModBlocks.STELLALUNITE_BUTTON.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.STELLALUNITE_PRESSURE_PLATE.get(), ModItems.STELLALUNITE.get());
+
+        fenceBuilder(ModBlocks.STELLALUNITE_FENCE.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.STELLALUNITE_FENCE_GATE.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLALUNITE_WALL.get(), ModItems.STELLALUNITE.get());
+
+        doorBuilder(ModBlocks.STELLALUNITE_DOOR.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.STELLALUNITE_TRAP_DOOR.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

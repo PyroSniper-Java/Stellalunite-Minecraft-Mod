@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "stellalunitemod:block/stellalunite_slab"
+    },
+    "type=double": {
+      "model": "stellalunitemod:block/stellalunite_block"
+    },
+    "type=top": {
+      "model": "stellalunitemod:block/stellalunite_slab_top"
+    }
+  }
+}

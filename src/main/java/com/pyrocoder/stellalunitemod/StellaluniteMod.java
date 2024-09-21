@@ -74,6 +74,22 @@ public class StellaluniteMod {
             event.accept(ModItems.INBONE_STEAK);
         }
 
+        if(event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_NONBLOCK_BLOCKS.getKey()) {
+            event.accept(ModBlocks.CRASH_BUTTON.get());
+
+            event.accept(ModBlocks.STELLALUNITE_STAIR.get());
+            event.accept(ModBlocks.STELLALUNITE_SLAB.get());
+
+            event.accept(ModBlocks.STELLALUNITE_PRESSURE_PLATE.get());
+            event.accept(ModBlocks.STELLALUNITE_BUTTON.get());
+
+            event.accept(ModBlocks.STELLALUNITE_FENCE.get());
+            event.accept(ModBlocks.STELLALUNITE_FENCE_GATE.get());
+            event.accept(ModBlocks.STELLALUNITE_WALL.get());
+
+            event.accept(ModBlocks.STELLALUNITE_DOOR.get());
+            event.accept(ModBlocks.STELLALUNITE_TRAP_DOOR.get());
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
