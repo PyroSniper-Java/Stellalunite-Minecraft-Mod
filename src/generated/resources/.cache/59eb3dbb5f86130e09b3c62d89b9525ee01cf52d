@@ -1,4 +1,4 @@
-// 1.21	2024-09-20T22:33:21.2865921	Loot Tables
+// 1.21	2024-09-20T23:09:02.9238052	Loot Tables
 3937bc510815bfd72b00063211910edd5ce6d212 data/stellalunitemod/loot_table/blocks/crash_button.json
 e91fd0133eb88ea4d7609bb114dd84e27ff5de83 data/stellalunitemod/loot_table/blocks/duplicate_block.json
 ef1659ff0bae03357f406dbf7936f6c72f76a83d data/stellalunitemod/loot_table/blocks/magic_block.json
@@ -13,5 +13,5 @@ ed9a1b3febc72a2e9326b58c43881b15ab6a6ad3 data/stellalunitemod/loot_table/blocks/
 3f66fb85ad2b0616ecdeed761d397bb44758f8ef data/stellalunitemod/loot_table/blocks/stellalunite_pressure_plate.json
 107b97d74c53c7d830bfd621d639daaab528fc73 data/stellalunitemod/loot_table/blocks/stellalunite_slab.json
 f28e35e4793f9594bad69033899832f4a1cb5d53 data/stellalunitemod/loot_table/blocks/stellalunite_stair.json
-a40ec7c5bdb4f2ddd94fc01edc8c16e4147681c5 data/stellalunitemod/loot_table/blocks/stellalunite_tarp_door.json
+cd71a634b7f9e0d90c417852b5e6642e0d189120 data/stellalunitemod/loot_table/blocks/stellalunite_trap_door.json
 098828a0de6f82ebc4b6f3071e83f0ac4dde4c12 data/stellalunitemod/loot_table/blocks/stellalunite_wall.json

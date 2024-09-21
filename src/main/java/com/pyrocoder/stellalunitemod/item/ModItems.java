@@ -24,6 +24,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_STELLALUNITE = ITEMS.register("raw_stellalunite",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IDK = ITEMS.register("idk",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> STELLALUNITE_BONE = ITEMS.register("stellalunite_bone",
             () -> new StellaluniteBone(new Item.Properties()) {

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "stellalunitemod:stellalunite_tarp_door"
+          "name": "stellalunitemod:stellalunite_trap_door"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "stellalunitemod:blocks/stellalunite_tarp_door"
+  "random_sequence": "stellalunitemod:blocks/stellalunite_trap_door"
 }

@@ -92,7 +92,7 @@ public class ModBlocks {
                     .strength(2f)
                     .requiresCorrectToolForDrops()
                     .noOcclusion()));
-   public static final RegistryObject<TrapDoorBlock> STELLALUNITE_TRAP_DOOR = registerBlock("stellalunite_tarp_door",
+   public static final RegistryObject<TrapDoorBlock> STELLALUNITE_TRAP_DOOR = registerBlock("stellalunite_trap_door",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of()
                     .strength(2f)
                     .requiresCorrectToolForDrops()

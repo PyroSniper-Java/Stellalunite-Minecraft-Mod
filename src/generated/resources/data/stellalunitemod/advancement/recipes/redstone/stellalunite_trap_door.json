@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stellalunitemod:stellalunite_tarp_door"
+        "recipe": "stellalunitemod:stellalunite_trap_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "stellalunitemod:stellalunite_tarp_door"
+      "stellalunitemod:stellalunite_trap_door"
     ]
   }
 }

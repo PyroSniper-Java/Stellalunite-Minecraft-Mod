@@ -22,6 +22,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.STELLALUNITE.get());
         basicItem(ModItems.RAW_STELLALUNITE.get());
 
+        basicItem(ModItems.IDK.get());
+
         basicItem(ModItems.STELLALUNITE_BONE.get());
 
         basicItem(ModItems.INBONE_STEAK.get());
