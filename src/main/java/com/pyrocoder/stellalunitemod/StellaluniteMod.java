@@ -89,6 +89,8 @@ public class StellaluniteMod {
 
             event.accept(ModBlocks.STELLALUNITE_DOOR.get());
             event.accept(ModBlocks.STELLALUNITE_TRAP_DOOR.get());
+
+            event.accept(ModBlocks.STELLALUNITE_LAMP.get());
         }
     }
 

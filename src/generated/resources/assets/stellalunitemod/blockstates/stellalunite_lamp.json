@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "stellalunitemod:block/stellalunite_lamp_off"
+    },
+    "clicked=true": {
+      "model": "stellalunitemod:block/stelllalunite_lamp_on"
+    }
+  }
+}

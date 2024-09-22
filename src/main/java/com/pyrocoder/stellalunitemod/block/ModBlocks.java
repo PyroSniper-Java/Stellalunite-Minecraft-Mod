@@ -2,6 +2,7 @@ package com.pyrocoder.stellalunitemod.block;
 
 import com.pyrocoder.stellalunitemod.StellaluniteMod;
 import com.pyrocoder.stellalunitemod.block.custom.MagicBlock;
+import com.pyrocoder.stellalunitemod.block.custom.StellaluniteLampBlock;
 import com.pyrocoder.stellalunitemod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -97,6 +98,12 @@ public class ModBlocks {
                     .strength(2f)
                     .requiresCorrectToolForDrops()
                     .noOcclusion()));
+
+   public static final RegistryObject<Block> STELLALUNITE_LAMP = registerBlock("stellalunite_lamp",
+           () -> new StellaluniteLampBlock(BlockBehaviour.Properties.of()
+                   .destroyTime(100)
+                   .lightLevel(state -> state.getValue(StellaluniteLampBlock.CLICKED) ? 15 : 0)
+                   .sound(SoundType.GLASS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -2,9 +2,12 @@ package com.pyrocoder.stellalunitemod.datagen;
 
 import com.pyrocoder.stellalunitemod.StellaluniteMod;
 import com.pyrocoder.stellalunitemod.block.ModBlocks;
+import com.pyrocoder.stellalunitemod.block.custom.StellaluniteLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
@@ -52,6 +55,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STELLALUNITE_FENCE_GATE);
 
         blockItem(ModBlocks.STELLALUNITE_TRAP_DOOR, "_bottom");
+
+        customLamp(ModBlocks.STELLALUNITE_LAMP);
+    }
+
+    private void customLamp(RegistryObject<Block> blockRegistryObject) {
+        getVariantBuilder(blockRegistryObject.get()).forAllStates(state -> {
+            if(state.getValue(StellaluniteLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(blockRegistryObject + "_on",
+                        ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + blockRegistryObject + "_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(blockRegistryObject + "_off",
+                        ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + blockRegistryObject + "_off")))};
+            }
+        });
+        simpleBlockItem(blockRegistryObject.get(), models().cubeAll(blockRegistryObject + "_on",
+                ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + blockRegistryObject + "_on")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

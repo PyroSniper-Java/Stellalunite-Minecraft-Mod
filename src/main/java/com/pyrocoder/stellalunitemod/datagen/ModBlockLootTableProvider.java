@@ -55,6 +55,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.STELLALUNITE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.STELLALUNITE_DOOR.get()));
         dropSelf(ModBlocks.STELLALUNITE_TRAP_DOOR.get());
+
+        dropSelf(ModBlocks.STELLALUNITE_LAMP.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
