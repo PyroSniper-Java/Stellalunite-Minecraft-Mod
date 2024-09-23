@@ -6,6 +6,8 @@ import com.pyrocoder.stellalunitemod.block.custom.StellaluniteLampBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -56,12 +58,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockItem(ModBlocks.STELLALUNITE_TRAP_DOOR, "_bottom");
 
-        customLamp(ModBlocks.STELLALUNITE_LAMP);
+        customLamp(ModBlocks.STELLALUNITE_LAMP, StellaluniteLampBlock.CLICKED);
     }
 
-    private void customLamp(RegistryObject<Block> blockRegistryObject) {
+    private void customLamp(RegistryObject<Block> blockRegistryObject, BooleanProperty blockState) {
         getVariantBuilder(blockRegistryObject.get()).forAllStates(state -> {
-            if(state.getValue(StellaluniteLampBlock.CLICKED)) {
+            if(blockState.getValue()) {
                 return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(blockRegistryObject + "_on",
                         ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + blockRegistryObject + "_on")))};
             } else {
