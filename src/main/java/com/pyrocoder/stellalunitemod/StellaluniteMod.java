@@ -3,6 +3,7 @@ package com.pyrocoder.stellalunitemod;
 
 import com.mojang.logging.LogUtils;
 import com.pyrocoder.stellalunitemod.block.ModBlocks;
+import com.pyrocoder.stellalunitemod.component.ModDataComponentTypes;
 import com.pyrocoder.stellalunitemod.item.ModCreativeModeTabs;
 import com.pyrocoder.stellalunitemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -39,6 +40,8 @@ public class StellaluniteMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

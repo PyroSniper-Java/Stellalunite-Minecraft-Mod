@@ -1,6 +1,7 @@
 package com.pyrocoder.stellalunitemod.item.custom;
 
 import com.pyrocoder.stellalunitemod.block.ModBlocks;
+import com.pyrocoder.stellalunitemod.component.ModDataComponentTypes;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -54,6 +55,8 @@ public class WandItem extends Item {
                         item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                pContext.getItemInHand().set(ModDataComponentTypes.COORDINATES.get(), pContext.getClickedPos());
             }
         }
         return InteractionResult.SUCCESS;
@@ -71,6 +74,10 @@ public class WandItem extends Item {
             pTooltipComponents.add(Component.translatable("tooltip.stellalunitemod.wand_alt5"));
         } else {
             pTooltipComponents.add(Component.translatable("tooltip.stellalunitemod.wand_null"));
+        }
+
+        if (pStack.get(ModDataComponentTypes.COORDINATES.get()) != null) {
+            pTooltipComponents.add(Component.literal("Last Block Changed At " + pStack.get(ModDataComponentTypes.COORDINATES.get())));
         }
 
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
