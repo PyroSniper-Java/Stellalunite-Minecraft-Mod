@@ -2,11 +2,11 @@ package com.pyrocoder.stellalunitemod.datagen;
 
 import com.pyrocoder.stellalunitemod.StellaluniteMod;
 import com.pyrocoder.stellalunitemod.block.ModBlocks;
-import com.pyrocoder.stellalunitemod.item.ModItems;
+import com.pyrocoder.stellalunitemod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -26,7 +26,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.STELLALUNITE_ORE.get())
                 .add(ModBlocks.STELLALUNITE_DEEPSLATE_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get())
-                .add(ModBlocks.DUPLICATE_BLOCK.get());
+                .add(ModBlocks.DUPLICATE_BLOCK.get())
+                .add(Blocks.BEDROCK);
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.MAGIC_BLOCK.get());
@@ -47,5 +48,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.WALLS)
                 .add(ModBlocks.STELLALUNITE_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_STELLALUNITE_TOOL)
+                .add(Blocks.BEDROCK)
+                .addTags(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_STELLALUNITE_TOOL)
+                .addTags(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
+                .remove(ModTags.Blocks.NEEDS_STELLALUNITE_TOOL);
     }
 }

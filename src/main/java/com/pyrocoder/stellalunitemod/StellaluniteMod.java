@@ -55,29 +55,37 @@ public class StellaluniteMod {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_ITEMS_TAB.getKey()) {
-            event.accept(ModItems.STELLALUNITE);
-            event.accept(ModItems.RAW_STELLALUNITE);
-            event.accept(ModItems.STELLALUNITE_BONE);
+            event.accept(ModItems.STELLALUNITE.get());
+            event.accept(ModItems.RAW_STELLALUNITE.get());
+            event.accept(ModItems.STELLALUNITE_BONE.get());
 
-            event.accept(ModItems.BONE_MARROW);
+            event.accept(ModItems.BONE_MARROW.get());
 
-            event.accept(ModItems.WAND);
+            event.accept(ModItems.WAND.get());
+        }
+
+        if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_ITEMS_TAB.getKey()) {
+            event.accept(ModItems.STELLALUNITE_SWORD.get());
+            event.accept(ModItems.STELLALUNITE_PICKAXE.get());
+            event.accept(ModItems.STELLALUNITE_SHOVEL.get());
+            event.accept(ModItems.STELLALUNITE_AXE.get());
+            event.accept(ModItems.STELLALUNITE_HOE.get());
         }
 
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_BLOCKS_TAB.getKey()) {
-            event.accept(ModBlocks.STELLALUNITE_BLOCK);
-            event.accept(ModBlocks.RAW_STELLALUNITE_BLOCK);
-            event.accept(ModBlocks.STELLALUNITE_ORE);
-            event.accept(ModBlocks.STELLALUNITE_DEEPSLATE_ORE);
-            event.accept(ModBlocks.MAGIC_BLOCK);
-            event.accept(ModBlocks.DUPLICATE_BLOCK);
+            event.accept(ModBlocks.STELLALUNITE_BLOCK.get());
+            event.accept(ModBlocks.RAW_STELLALUNITE_BLOCK.get());
+            event.accept(ModBlocks.STELLALUNITE_ORE.get());
+            event.accept(ModBlocks.STELLALUNITE_DEEPSLATE_ORE.get());
+            event.accept(ModBlocks.MAGIC_BLOCK.get());
+            event.accept(ModBlocks.DUPLICATE_BLOCK.get());
         }
 
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_FOODS_TAB.getKey()) {
-            event.accept(ModItems.INBONE_STEAK);
+            event.accept(ModItems.INBONE_STEAK.get());
         }
 
-        if(event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_NONBLOCK_BLOCKS.getKey()) {
+        if(event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_NONBLOCK_BLOCKS_TAB.getKey()) {
             event.accept(ModBlocks.CRASH_BUTTON.get());
 
             event.accept(ModBlocks.STELLALUNITE_STAIR.get());

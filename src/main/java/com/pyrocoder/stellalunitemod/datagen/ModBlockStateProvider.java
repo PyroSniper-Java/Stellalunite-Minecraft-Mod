@@ -58,21 +58,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockItem(ModBlocks.STELLALUNITE_TRAP_DOOR, "_bottom");
 
-        customLamp(ModBlocks.STELLALUNITE_LAMP, StellaluniteLampBlock.CLICKED);
+        customLamp();
     }
 
-    private void customLamp(RegistryObject<Block> blockRegistryObject, BooleanProperty blockState) {
-        getVariantBuilder(blockRegistryObject.get()).forAllStates(state -> {
-            if(blockState.getValue()) {
-                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(blockRegistryObject + "_on",
-                        ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + blockRegistryObject + "_on")))};
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.STELLALUNITE_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(StellaluniteLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("stellalunite_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + "stellalunite_lamp_on")))};
             } else {
-                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(blockRegistryObject + "_off",
-                        ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + blockRegistryObject + "_off")))};
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("stellalunite_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + "stellalunite_lamp_off")))};
             }
         });
-        simpleBlockItem(blockRegistryObject.get(), models().cubeAll(blockRegistryObject + "_on",
-                ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + blockRegistryObject + "_on")));
+        simpleBlockItem(ModBlocks.STELLALUNITE_LAMP.get(), models().cubeAll("stellalunite_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, "block/" + "stellalunite_lamp_on")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

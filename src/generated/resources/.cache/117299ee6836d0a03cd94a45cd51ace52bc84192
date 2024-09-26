@@ -1,8 +1,10 @@
-// 1.21	2024-09-20T22:25:52.655429	Tags for minecraft:block mod id stellalunitemod
+// 1.21	2024-09-26T16:50:20.358331	Tags for minecraft:block mod id stellalunitemod
 edb63914a211e614d5963ede169dd5284aab5419 data/minecraft/tags/block/fences.json
 a320f3063b3ee9822f8d1e18d8001f28a00f63d4 data/minecraft/tags/block/fence_gates.json
-ec2799242783d561e624f2632d411fadfb6a7ece data/minecraft/tags/block/mineable/pickaxe.json
+2b85080c08d9fb792767a2941b97a270a0b2fc43 data/minecraft/tags/block/mineable/pickaxe.json
 2240099ca3ad3d2a79cf9b0572ad23f4c9395448 data/minecraft/tags/block/needs_diamond_tool.json
 fc1a4314af90f7c215034c111fa99bf43eef5b62 data/minecraft/tags/block/needs_iron_tool.json
 2d0154c620aae3b0bd5efc14823fc7e9cc934887 data/minecraft/tags/block/needs_stone_tool.json
 8a203595a724c920156522982bd08617395d1e74 data/minecraft/tags/block/walls.json
+048e062f6d35c27717f5907f9fd6f65ac37284eb data/stellalunitemod/tags/block/incorrect_for_stellalunite_tool.json
+b96aedb72408683f009875ee724477a843095987 data/stellalunitemod/tags/block/needs_stellalunite_tool.json

@@ -5,6 +5,7 @@
     "stellalunitemod:stellalunite_ore",
     "stellalunitemod:stellalunite_deepslate_ore",
     "stellalunitemod:magic_block",
-    "stellalunitemod:duplicate_block"
+    "stellalunitemod:duplicate_block",
+    "minecraft:bedrock"
   ]
 }

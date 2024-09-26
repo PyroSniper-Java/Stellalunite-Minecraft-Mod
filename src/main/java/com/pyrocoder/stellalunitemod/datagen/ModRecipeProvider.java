@@ -10,7 +10,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -108,8 +107,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         fenceGateBuilder(ModBlocks.STELLALUNITE_FENCE_GATE.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
         wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLALUNITE_WALL.get(), ModItems.STELLALUNITE.get());
 
-        doorBuilder(ModBlocks.STELLALUNITE_DOOR.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
-        trapdoorBuilder(ModBlocks.STELLALUNITE_TRAP_DOOR.get(), Ingredient.of(ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
+        doorBuilder(ModBlocks.STELLALUNITE_DOOR.get(), Ingredient.of(
+                ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(getHasName(
+                        ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.STELLALUNITE_TRAP_DOOR.get(), Ingredient.of(
+                ModItems.STELLALUNITE.get())).group("stellalunite").unlockedBy(
+                        getHasName(ModItems.STELLALUNITE.get()), has(ModItems.STELLALUNITE.get())).save(pRecipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
@@ -118,16 +121,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 pExperience, pCookingTIme, pGroup, "_from_smelting");
     }
 
-    protected static void oreBlasting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
-                                      float pExperience, int pCookingTime, String pGroup) {
+    protected static void oreBlasting(
+            RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
+            float pExperience, int pCookingTime, String pGroup) {
         oreCooking(recipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, pIngredients, pCategory, pResult,
                 pExperience, pCookingTime, pGroup, "_from_blasting");
     }
 
-    protected static <T extends AbstractCookingRecipe> void oreCooking(RecipeOutput recipeOutput, RecipeSerializer<T> pCookingSerializer, AbstractCookingRecipe.Factory<T> factory,
-                                                                       List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
+    protected static <T extends AbstractCookingRecipe> void oreCooking(
+            RecipeOutput recipeOutput, RecipeSerializer<T> pCookingSerializer, AbstractCookingRecipe.Factory<T> factory,
+            List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
+            float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         for(ItemLike itemlike : pIngredients) {
-            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
+            SimpleCookingRecipeBuilder.generic(
+                    Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory)
+                    .group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(recipeOutput, StellaluniteMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
     }

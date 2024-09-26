@@ -5,9 +5,7 @@ import com.pyrocoder.stellalunitemod.item.custom.FuelItem;
 import com.pyrocoder.stellalunitemod.item.custom.StellaluniteBone;
 import com.pyrocoder.stellalunitemod.item.custom.WandItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -47,6 +45,23 @@ public class ModItems {
     //Fuel Items
     public static final RegistryObject<Item> BONE_MARROW = ITEMS.register("bone_marrow",
             () -> new FuelItem(new Item.Properties(), 1200));
+
+    //Tools
+    public static final RegistryObject<Item> STELLALUNITE_SWORD = ITEMS.register("stellalunite_sword",
+            () -> new SwordItem(ModToolTiers.STELLALUNITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.STELLALUNITE, 3, -2.4f))));
+    public static final RegistryObject<Item> STELLALUNITE_PICKAXE = ITEMS.register("stellalunite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.STELLALUNITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STELLALUNITE, 1, -2.8f))));
+    public static final RegistryObject<Item> STELLALUNITE_SHOVEL = ITEMS.register("stellalunite_shovel",
+            () -> new ShovelItem(ModToolTiers.STELLALUNITE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.STELLALUNITE, 1.5f, -3.0f))));
+    public static final RegistryObject<Item> STELLALUNITE_AXE = ITEMS.register("stellalunite_axe",
+            () -> new AxeItem(ModToolTiers.STELLALUNITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.STELLALUNITE, 6, -3.2f))));
+    public static final RegistryObject<Item> STELLALUNITE_HOE = ITEMS.register("stellalunite_hoe",
+            () -> new HoeItem(ModToolTiers.STELLALUNITE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.STELLALUNITE, 0, -3.0f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

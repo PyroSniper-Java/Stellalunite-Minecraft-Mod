@@ -21,9 +21,17 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> STELLALUNITE_TOOLS_TAB = CREATIVE_MODE_TABS.register("stellalunite_tools_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STELLALUNITE_SWORD.get()))
+                    .withTabsBefore(STELLALUNITE_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.stellalunitemod.stellalunite_tools_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                    }).build());
+
     public static final RegistryObject<CreativeModeTab> STELLALUNITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("stellalunite_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.STELLALUNITE_BLOCK.get()))
-                    .withTabsBefore(STELLALUNITE_ITEMS_TAB.getId())
+                    .withTabsBefore(STELLALUNITE_TOOLS_TAB.getId())
                     .title(Component.translatable("creativetab.stellalunitemod.stellalunite_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
 
@@ -37,10 +45,10 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
-    public static final RegistryObject<CreativeModeTab> STELLALUNITE_NONBLOCK_BLOCKS = CREATIVE_MODE_TABS.register("stellalunite_nonblocks_blocks",
+    public static final RegistryObject<CreativeModeTab> STELLALUNITE_NONBLOCK_BLOCKS_TAB = CREATIVE_MODE_TABS.register("stellalunite_nonblocks_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.IDK.get()))
                     .withTabsBefore(STELLALUNITE_BLOCKS_TAB.getId())
-                    .title(Component.translatable("creativetab.stellalunitemod.stellalunite_nonblock_blocks"))
+                    .title(Component.translatable("creativetab.stellalunitemod.stellalunite_nonblock_blocks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                     }).build());

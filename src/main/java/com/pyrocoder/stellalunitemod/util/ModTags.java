@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_STELLALUNITE_TOOL = createTag("needs_stellalunite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_STELLALUNITE_TOOL = createTag("incorrect_for_stellalunite_tool");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(StellaluniteMod.MOD_ID, name));

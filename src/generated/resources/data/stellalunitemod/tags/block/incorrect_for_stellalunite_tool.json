@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#stellalunitemod:needs_stellalunite_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_netherite_tool"
+  ]
+}
