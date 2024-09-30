@@ -43,6 +43,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.STELLALUNITE_SHOVEL);
         handheldItem(ModItems.STELLALUNITE_AXE);
         handheldItem(ModItems.STELLALUNITE_HOE);
+
+        handheldItem(ModItems.STELLALUNITE_HAMMER);
     }
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),

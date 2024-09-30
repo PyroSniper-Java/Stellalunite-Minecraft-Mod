@@ -26,6 +26,14 @@
   "block.stellalunitemod.stellalunite_door": "Stellalunite Door",
   "block.stellalunitemod.stellalunite_trap_door": "Stellalunite Trap Door",
 
+  "item.stellalunitemod.stellalunite_sword": "Stellalunite Sword",
+  "item.stellalunitemod.stellalunite_pickaxe": "Stellalunite Pickaxe",
+  "item.stellalunitemod.stellalunite_shovel": "Stellalunite Shovel",
+  "item.stellalunitemod.stellalunite_axe": "Stellalunite Axe",
+  "item.stellalunitemod.stellalunite_hoe": "Stellalunite Hoe",
+
+  "item.stellalunitemod.stellalunite_hammer": "Stellalunite Hammer",
+
   "block.stellalunitemod.crash_button": "§kCrash Button§r",
 
   "block.stellalunitemod.stellalunite_lamp": "Stellalunite Lamp Block",
@@ -34,7 +42,7 @@
   "creativetab.stellalunitemod.stellalunite_blocks": "Stellalunite Blocks",
   "creativetab.stellalunitemod.stellalunite_foods": "Stellalunite Foods",
   "creativetab.stellalunitemod.stellalunite_nonblock_blocks": "Stellalunite Nonblock Blocks",
-  "creativetab.stellalunitemod.stellalunite_items_tab": "Stellalunite Tools",
+  "creativetab.stellalunitemod.stellalunite_tools_tab": "Stellalunite Tools",
 
   "tooltip.stellalunitemod.magic_block_tip": "This is a §kMagic §kBlock",
 

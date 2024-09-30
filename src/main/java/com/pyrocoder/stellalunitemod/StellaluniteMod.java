@@ -64,12 +64,13 @@ public class StellaluniteMod {
             event.accept(ModItems.WAND.get());
         }
 
-        if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_ITEMS_TAB.getKey()) {
+        if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_TOOLS_TAB.getKey()) {
             event.accept(ModItems.STELLALUNITE_SWORD.get());
             event.accept(ModItems.STELLALUNITE_PICKAXE.get());
             event.accept(ModItems.STELLALUNITE_SHOVEL.get());
             event.accept(ModItems.STELLALUNITE_AXE.get());
             event.accept(ModItems.STELLALUNITE_HOE.get());
+            event.accept(ModItems.STELLALUNITE_HAMMER.get());
         }
 
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_BLOCKS_TAB.getKey()) {

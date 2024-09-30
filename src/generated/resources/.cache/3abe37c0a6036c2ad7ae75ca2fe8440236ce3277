@@ -1,4 +1,4 @@
-// 1.21	2024-09-26T16:50:20.3552912	Item Models: stellalunitemod
+// 1.21	2024-09-29T20:54:18.3894173	Item Models: stellalunitemod
 5575c782259a803f30d3929b7d1c013c7a82a7bb assets/stellalunitemod/models/item/bone_marrow.json
 7a1bcaf48334aa6137662935206aaa144118d027 assets/stellalunitemod/models/item/crash_button.json
 d36e7814645e8e1c96b233f08d250c191bc516e9 assets/stellalunitemod/models/item/idk.json
@@ -10,6 +10,7 @@ a2328b924ed3b2c971402858b91787269c4e88f8 assets/stellalunitemod/models/item/stel
 7a1bcaf48334aa6137662935206aaa144118d027 assets/stellalunitemod/models/item/stellalunite_button.json
 0c2d28813774296243b32b8bbda4d7260cec549b assets/stellalunitemod/models/item/stellalunite_door.json
 c6b5917d4ca0ad4535628bf5de4a586f2c28201b assets/stellalunitemod/models/item/stellalunite_fence.json
+de55612503cf8030263ab17070af9d0a5dc12b55 assets/stellalunitemod/models/item/stellalunite_hammer.json
 31a58d85a2189c2aba365e5b2a9b2effd704afab assets/stellalunitemod/models/item/stellalunite_hoe.json
 2adafd850c052060bca20013306fa5d1c994fcc1 assets/stellalunitemod/models/item/stellalunite_pickaxe.json
 6947171485ece231f3895ec1fb2c05269d9b1596 assets/stellalunitemod/models/item/stellalunite_shovel.json

@@ -2,6 +2,7 @@ package com.pyrocoder.stellalunitemod.item;
 
 import com.pyrocoder.stellalunitemod.StellaluniteMod;
 import com.pyrocoder.stellalunitemod.item.custom.FuelItem;
+import com.pyrocoder.stellalunitemod.item.custom.HammerItem;
 import com.pyrocoder.stellalunitemod.item.custom.StellaluniteBone;
 import com.pyrocoder.stellalunitemod.item.custom.WandItem;
 import net.minecraft.network.chat.Component;
@@ -62,6 +63,11 @@ public class ModItems {
     public static final RegistryObject<Item> STELLALUNITE_HOE = ITEMS.register("stellalunite_hoe",
             () -> new HoeItem(ModToolTiers.STELLALUNITE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.STELLALUNITE, 0, -3.0f))));
+
+    public static final RegistryObject<Item> STELLALUNITE_HAMMER = ITEMS.register("stellalunite_hammer",
+            () -> new HammerItem(ModToolTiers.STELLALUNITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STELLALUNITE, 1, -2.8f))));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
