@@ -32,5 +32,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RAW_STELLALUNITE.get())
                 .add(ModItems.BONE_MARROW.get())
                 .add(Items.REDSTONE);
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.STELLALUNITE_BOOTS.get())
+                .add(ModItems.STELLALUNITE_LEGGINGS.get())
+                .add(ModItems.STELLALUNITE_CHESTPLATE.get())
+                .add(ModItems.STELLALUNITE_HELMET.get());
     }
 }

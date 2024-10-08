@@ -71,6 +71,12 @@ public class StellaluniteMod {
             event.accept(ModItems.STELLALUNITE_AXE.get());
             event.accept(ModItems.STELLALUNITE_HOE.get());
             event.accept(ModItems.STELLALUNITE_HAMMER.get());
+
+            event.accept(ModItems.STELLALUNITE_BOOTS);
+            event.accept(ModItems.STELLALUNITE_LEGGINGS);
+            event.accept(ModItems.STELLALUNITE_CHESTPLATE);
+            event.accept(ModItems.STELLALUNITE_HELMET);
+            event.accept(ModItems.STELLALUNITE_BODY);
         }
 
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_BLOCKS_TAB.getKey()) {

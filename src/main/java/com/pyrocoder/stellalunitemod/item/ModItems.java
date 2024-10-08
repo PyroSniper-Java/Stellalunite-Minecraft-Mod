@@ -68,6 +68,22 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.STELLALUNITE, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.STELLALUNITE, 1, -2.8f))));
 
+    //ARMOR
+    public static final RegistryObject<Item> STELLALUNITE_BOOTS = ITEMS.register("stellalunite_boots",
+            () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(100))));
+    public static final RegistryObject<Item> STELLALUNITE_LEGGINGS = ITEMS.register("stellalunite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(100))));
+    public static final RegistryObject<Item> STELLALUNITE_CHESTPLATE = ITEMS.register("stellalunite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(100))));
+    public static final RegistryObject<Item> STELLALUNITE_HELMET = ITEMS.register("stellalunite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(100))));
+    public static final RegistryObject<Item> STELLALUNITE_BODY = ITEMS.register("stellalunite_body",
+            () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.BODY,
+                    new Item.Properties().durability(ArmorItem.Type.BODY.getDurability(100))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
