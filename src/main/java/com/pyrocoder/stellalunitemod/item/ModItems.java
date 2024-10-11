@@ -1,13 +1,11 @@
 package com.pyrocoder.stellalunitemod.item;
 
 import com.pyrocoder.stellalunitemod.StellaluniteMod;
-import com.pyrocoder.stellalunitemod.item.custom.FuelItem;
-import com.pyrocoder.stellalunitemod.item.custom.HammerItem;
-import com.pyrocoder.stellalunitemod.item.custom.StellaluniteBone;
-import com.pyrocoder.stellalunitemod.item.custom.WandItem;
+import com.pyrocoder.stellalunitemod.item.custom.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -70,7 +68,7 @@ public class ModItems {
 
     //ARMOR
     public static final RegistryObject<Item> STELLALUNITE_BOOTS = ITEMS.register("stellalunite_boots",
-            () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+            () -> new ModArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(100))));
     public static final RegistryObject<Item> STELLALUNITE_LEGGINGS = ITEMS.register("stellalunite_leggings",
             () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
