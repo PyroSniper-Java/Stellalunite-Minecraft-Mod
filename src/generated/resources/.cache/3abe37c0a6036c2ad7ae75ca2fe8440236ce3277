@@ -1,4 +1,4 @@
-// 1.21	2024-10-07T21:24:10.6321377	Item Models: stellalunitemod
+// 1.21	2024-10-11T14:11:47.3249677	Item Models: stellalunitemod
 5575c782259a803f30d3929b7d1c013c7a82a7bb assets/stellalunitemod/models/item/bone_marrow.json
 7a1bcaf48334aa6137662935206aaa144118d027 assets/stellalunitemod/models/item/crash_button.json
 d36e7814645e8e1c96b233f08d250c191bc516e9 assets/stellalunitemod/models/item/idk.json
@@ -45,6 +45,7 @@ a0e97cee9bc6a73d07a467a5c61f69b587fb5f63 assets/stellalunitemod/models/item/stel
 9e9a1cce3e789fe685bdd512c70586e419add8c1 assets/stellalunitemod/models/item/stellalunite_helmet_quartz_trim.json
 83de875f0061da71cc2b321c6878cdce90c3b12d assets/stellalunitemod/models/item/stellalunite_helmet_redstone_trim.json
 31a58d85a2189c2aba365e5b2a9b2effd704afab assets/stellalunitemod/models/item/stellalunite_hoe.json
+4dd74674ce7babdc68b6d3679d3ef663b6655558 assets/stellalunitemod/models/item/stellalunite_horse_armor.json
 3c833bd1f0201e466d8bac14df642d84b17eb80d assets/stellalunitemod/models/item/stellalunite_leggings.json
 9b0742f1e914db8fc0965cb3ed3be54f7cb37ec8 assets/stellalunitemod/models/item/stellalunite_leggings_amethyst_trim.json
 192fc6ae14c5c3a2d4e08cdff47bc7234c3ba075 assets/stellalunitemod/models/item/stellalunite_leggings_copper_trim.json

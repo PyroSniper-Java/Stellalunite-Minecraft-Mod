@@ -76,7 +76,8 @@ public class StellaluniteMod {
             event.accept(ModItems.STELLALUNITE_LEGGINGS);
             event.accept(ModItems.STELLALUNITE_CHESTPLATE);
             event.accept(ModItems.STELLALUNITE_HELMET);
-            event.accept(ModItems.STELLALUNITE_BODY);
+
+            event.accept(ModItems.STELLALUNITE_HORSE_ARMOR);
         }
 
         if (event.getTabKey() == ModCreativeModeTabs.STELLALUNITE_BLOCKS_TAB.getKey()) {

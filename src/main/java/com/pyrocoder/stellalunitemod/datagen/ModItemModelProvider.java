@@ -71,6 +71,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.STELLALUNITE_LEGGINGS);
         trimmedArmorItem(ModItems.STELLALUNITE_CHESTPLATE);
         trimmedArmorItem(ModItems.STELLALUNITE_HELMET);
+
+        basicItem(ModItems.STELLALUNITE_HORSE_ARMOR.get());
     }
 
     // Shoutout to El_Redstoniano for making this

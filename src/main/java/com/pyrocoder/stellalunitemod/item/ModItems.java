@@ -79,9 +79,11 @@ public class ModItems {
     public static final RegistryObject<Item> STELLALUNITE_HELMET = ITEMS.register("stellalunite_helmet",
             () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(100))));
-    public static final RegistryObject<Item> STELLALUNITE_BODY = ITEMS.register("stellalunite_body",
-            () -> new ArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, ArmorItem.Type.BODY,
-                    new Item.Properties().durability(ArmorItem.Type.BODY.getDurability(100))));
+
+    //Horse Armor
+    public static final RegistryObject<Item> STELLALUNITE_HORSE_ARMOR = ITEMS.register("stellalunite_horse_armor",
+            () -> new AnimalArmorItem(ModArmorMaterials.STELLALUNITE_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(17)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
